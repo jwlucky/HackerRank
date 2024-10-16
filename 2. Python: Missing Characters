@@ -1,3 +1,4 @@
+# Solution 1: 
 #!/bin/python3
 
 import math
@@ -42,3 +43,14 @@ if __name__ == '__main__':
     fptr.write(result + '\n')
 
     fptr.close()
+
+
+# Solution 2:
+    all_chars = "0123456789abcdefghijklmnopqrstuvwxyz"
+    missing = ""
+
+    for char in all_chars:
+        if char not in s:
+            missing += char
+
+    return missing
